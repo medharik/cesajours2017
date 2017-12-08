@@ -1,0 +1,47 @@
+*{
+	margin: 0;padding: 0;
+}
+body{
+	background: url('images/back.png') no-repeat fixed;
+	background-size: cover; 
+}
+.b{
+	border: 0px solid black;
+}
+#main{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+background: #000;
+width: 90%;
+margin: auto;
+color: white;
+opacity: 0.9;
+
+}
+
+.produit{
+flex-basis: 30%;/*width*/
+height: 400px;
+margin-bottom: 40px; 
+display: flex;
+flex-direction: column;
+}
+
+.tof {
+
+	flex: 6;
+
+}
+.tof img{
+	max-width: 100%;
+	max-height: 100%;
+}
+.desc{
+	flex: 2;
+
+}
+.prix{
+	flex: 1;
+	text-align: center;
+}

@@ -1,0 +1,40 @@
+*{
+	margin: 0;padding: 0;
+}
+.b{
+	border: 1px solid grey;
+}
+
+div img{
+	max-width: 100%;
+}
+#c{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+}
+ #c p{
+ 	text-align: justify;
+ }
+ #c h2{
+ 	text-align: center;
+ 	background: #015D34;
+ 	color: white;
+ 	margin-bottom:10px; 
+ }
+#c1{
+	
+	order: 1;
+	flex-basis: 25%;
+}
+#c2{
+	flex-basis: 25%; 
+	order: 3;
+}
+#c3{ order: 2;
+	flex-basis: 46%;
+}
+/*imposer un padding dans les div enfants direct de c */
+
+
