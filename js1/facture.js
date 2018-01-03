@@ -8,8 +8,17 @@ function ajouter () {
   tht=document.getElementById('tht');
     tva=document.getElementById('tva');
        ttc=document.getElementById('ttc');
-facture.innerHTML += "<tr><td>"+libelle.value+"</td>	<td>"+prix.value+"</td><td>"+qte.value+"</td></tr>";
-somme += prix.value*qte.value;
+facture.innerHTML += "<tr><td> <input  type='text' name='libelle' value='"+libelle.value+"'></td>	<td><input type='text' name='prix' value='"+prix.value+"'  onkeyup='calculer()'></td><td><input type=''text' onkeyup='calculer()' name='qte' value='"+qte.value+"'></td></tr>";
+calculer();
+}
+function calculer(){
+	somme=0;
+	tprix=document.getElementsByName('prix');
+	tqte=document.getElementsByName('qte');
+	for (var i = 0; i < tprix.length; i++) {
+	//	alert(tprix[i].value);
+	somme+=tprix[i].value*tqte[i].value;
+	};
 tht.innerHTML="THT : "+somme + " DHS";
 ttc.innerHTML= somme*(1+ tva.value/100);
 }
