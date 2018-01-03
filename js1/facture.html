@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js tp 2 : facture en ligne part 1</title>
+	<script type="text/javascript" src="facture.js"></script>
+	<link rel="stylesheet" href="facture.css">
+</head>
+<body>
+<table align="center">
+	<tr>
+		<td><input type="text" placeholder="Libellé" id="libelle"></td>
+		<td><input type="number" placeholder="Prix" id="prix" min="0"></td>
+		<td><input type="number" placeholder="quantité" id="qte" min="0"></td>
+		<td><button onclick="ajouter()">Ajouter</button></td>
+	</tr>
+</table>
+	<br>
+	<hr> 
+	<table align="center" id="facture" width="800" border="1">
+		<tr>
+			<th>libellé</th>
+			<th>prix</th>
+			<th>quantité</th>
+		</tr>
+		
+	</table>
+	<footer align="right">
+	<div id="tht"></div>
+<div id="taux"><input type="number" value="0" id="tva">
+</div>
+<div>TTC : <span id="ttc"></span> DHS</div>
+</footer>
+</body>
+
+</html>
