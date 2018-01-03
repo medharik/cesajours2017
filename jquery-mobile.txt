@@ -1,0 +1,40 @@
+data-role : page , content (ou role="main"), footer,button, listview, collapsible(div>h3+div), controlgroup (pour grouper en hirozontal (data-type="horizontal") ou vertical des controles)
+
+ data-transition="slide" (pour les liens a)
+  data-inset="true" (marge interne)
+  <div class="ui-grid-a"> 2 grids , b pour 3grids, ...
+   <div class="ui-block-a">Le contenu de la colonne de gauche</div>// le premier block
+   <div class="ui-block-b">Le contenu de la colonne de droite</div>
+</div>
+a href="index.php" data-role="button" data-mini="true" data-inline="true" data-icon="arrow-l" data-iconpos="left" data-transition="slide" data-direction="reverse">Accueil</a>
+menu:
+<div data-role="controlgroup" data-type="horizontal" data-mini="true">
+   <a href="http://jeremie.patonnier.net/" data-role="button" data-icon="forward" data-iconpos="right" target="_blank">Site</a>
+   <a href="https://twitter.com/#!/JeremiePat/" data-role="button" data-icon="forward" data-iconpos="right" target="_blank">Twitter</a>
+</div>
+les formulaires
+<form action="contact.php" method="post" id="form" data-transition="flow" data-rel="dialog">
+pour un slider on/off
+ <div data-role="fieldcontain">
+      <label for="id_deja_viendu">Vous aviez déjà participé à une Kiwi Partÿ&nbsp;?</label>
+      <select name="deja_viendu" id="id_deja_viendu" data-role="slider" data-mini="true">
+      <option value="Non">Non</option>
+      <option value="Oui">Oui</option>
+      </select>
+   </div>
+
+   pour un joli menu déroulant : 
+   <select name="note_nico" id="id_note_nico" required="required" data-native-menu="false" data-mini="true">
+      <option value="">Choisissez une option</option>
+      <option value="Nul">/dev/null</option>
+      <option value="Moyen">Moyen</option>
+      <option value="Bien">Bien</option>
+      <option value="Très bien">Très bien</option>
+      <option value="Formerveilleufantasmidable">Formerveilleufantasmidable</option>
+      </select>
+   </div>
+//pour personnaliser le loader
+$(document).bind("mobileinit", function(){
+   $.mobile.loadingMessageTextVisible = true;
+   $.mobile.loadingMessage = "Loading kiwÿ modules...";
+} );

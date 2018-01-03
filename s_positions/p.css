@@ -1,0 +1,68 @@
+*{
+	margin: 0;padding: 0;
+}
+.l100{
+	width: 100%;
+}
+.b{
+	border: 1px solid black;
+	box-sizing: border-box;
+}
+#haut{
+	height: 40px;
+	background: black;
+	position: fixed;
+	top: 0;
+}
+#header{
+	position: relative;
+height: 120px;
+margin-top:50px; 
+}
+#logo{
+	width: 250px;
+	height: 70px;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+
+}
+#menu1{
+	width: 400px;
+	height: 30px;
+		position: absolute;
+		bottom: 5px;
+		left: 5px;
+
+}
+#menu2{
+width: 400px;
+height: 30px;	
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+
+}
+#menu3{
+width: 300px;
+height: 30px;
+	position: absolute;
+right: 5px;
+top: 5px;
+}
+#banner{
+height: 400px;
+
+}
+
+.tof{
+	height: 400px;
+	
+	background: black;
+}
+
+.tof img{
+	width: 100%;
+	height: 100%
+}
+

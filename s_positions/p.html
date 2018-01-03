@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>positions  css </title>
+
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+     $('#banner').bxSlider({
+  auto: true,
+  autoControls: true,
+  stopAutoOnClick: true,
+  pager: true,
+ 
+});
+
+    });
+  </script>
+
+	<link rel="stylesheet" href="p.css">
+</head>
+<body>
+	
+	<div id="haut" class="l100 b"></div>
+		<div id="header" class="l100 b">
+			<div id="logo" class="b">logo</div>
+			<div id="menu1" class="b">menu1</div>
+			<div id="menu2" class="b">menu2</div>
+			<div id="menu3" class="b">menu3</div>
+
+		</div>
+		<div id="banner" class="b l100">
+			<div class="tof">
+				<img src="images/b1.jpg" alt="">
+
+			</div>
+			<div class="tof">
+				<img src="images/b2.png" alt="">
+
+			</div>
+			<div class="tof">
+				<img src="images/b3.png" alt="">
+
+			</div>
+
+		</div>
+</body>
+</html>
