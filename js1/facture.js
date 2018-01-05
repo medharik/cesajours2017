@@ -1,6 +1,5 @@
 somme =0;
 function ajouter () {
-
  libelle=document.getElementById('libelle');
  prix=document.getElementById('prix');
  qte=document.getElementById('qte');
@@ -10,8 +9,7 @@ function ajouter () {
        ttc=document.getElementById('ttc');
 facture.innerHTML += "<tr><td> <input  type='text' name='libelle' value='"+libelle.value+"'></td>	<td><input type='text' name='prix' value='"+prix.value+"'  onkeyup='calculer()'></td><td><input type=''text' onkeyup='calculer()' name='qte' value='"+qte.value+"'></td></tr>";
 calculer();
-}
-function calculer(){
+}function calculer(){
 	somme=0;
 	tprix=document.getElementsByName('prix');
 	tqte=document.getElementsByName('qte');
