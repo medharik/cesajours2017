@@ -7,9 +7,10 @@ function ajouter () {
   tht=document.getElementById('tht');
     tva=document.getElementById('tva');
        ttc=document.getElementById('ttc');
-facture.innerHTML += "<tr><td> <input  type='text' name='libelle' value='"+libelle.value+"'></td>	<td><input type='text' name='prix' value='"+prix.value+"'  onkeyup='calculer()'></td><td><input type=''text' onkeyup='calculer()' name='qte' value='"+qte.value+"'></td></tr>";
+facture.innerHTML += "<tr><td> <input  type='text' name='libelle' value='"+libelle.value+"'></td>	<td><input type='text' name='prix' value='"+prix.value+"'  onkeyup='calculer()'></td><td><input type=''text' onkeyup='calculer()' name='qte' value='"+qte.value+"'></td><td><a href='#1' onclick='del(this)'>supprimer</td></tr>";
 calculer();
-}function calculer(){
+}
+function calculer(){
 	somme=0;
 	tprix=document.getElementsByName('prix');
 	tqte=document.getElementsByName('qte');
@@ -19,4 +20,8 @@ calculer();
 	};
 tht.innerHTML="THT : "+somme + " DHS";
 ttc.innerHTML= somme*(1+ tva.value/100);
+}
+
+function del(e) {
+	e.parentNode.parentNode.remove();
 }
