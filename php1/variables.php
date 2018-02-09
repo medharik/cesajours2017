@@ -1,12 +1,12 @@
 <?php 
 define('TVA', 20);
 echo TVA;
-$nom="Fati";
-$prenom="Rim";
+$nom="unNom";
+$prenom="unPrenom";
 //$nomcomplet=$nom." ".$prenom;// "$nom $prenom"// 
 $nomcomplet="$nom $prenom";
 $age=24;
-$natioannalite="Congo ";
+$natioannalite="Marocaine ";
 $sexe="femme";
 $politesse ="";
 $couleur="";
@@ -30,7 +30,7 @@ else {
 <html>
 <head>
 <meta charset="utf-8">
-	<title>les variables en php</title>
+	<title>TEST PHP</title>
 </head>
 <body>
 <h2 style="color:<?php echo $couleur; ?>">Bienvenue <?php echo $politesse; ?> <?php echo $nomcomplet; ?> </h2>

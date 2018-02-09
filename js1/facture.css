@@ -1,7 +1,11 @@
-#tht{
-	background: grey;
+#tht,.ttc{
+	background: #EEE;
 	text-align: right;
 	color: blue;
+	padding: 5px;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 40px;
 }
 footer{
 	text-align: right;
