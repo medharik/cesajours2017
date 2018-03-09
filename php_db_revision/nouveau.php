@@ -25,7 +25,7 @@
 <?php if (isset($add)): ?>
  <div class="alert alert-success"> Ajout effectué avec succès</div>
 <?php endif ?>
-  <form class="form-horizontal" action="create.php" method="post">
+  <form class="form-horizontal" action="create.php" method="post" enctype="multipart/form-data">
 <fieldset>
 
 <!-- Form Name -->
@@ -49,6 +49,14 @@
   </div>
 </div>
 
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="libelle">Photo</label>  
+  <div class="col-md-4">
+  <input id="photo" name="photo" type="file" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
 <!-- Button -->
 <div class="form-group">
   <label class="col-md-4 control-label" for=""></label>

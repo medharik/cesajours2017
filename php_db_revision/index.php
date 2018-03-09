@@ -41,6 +41,7 @@ extract($_GET);
       <table class="tab table table-striped">
             <thead>
               <tr>
+                <th>Photo</th>
                 <th>#</th>
                 <th>Libellé</th>
                 <th>Prix</th>
@@ -51,6 +52,7 @@ extract($_GET);
             
               <?php foreach ($produits as $c => $ligne): ?>
                  <tr>
+                  <td><img src="<?php echo $ligne['photo'] ?>" width="100"></td>  
                 <td><?php echo $ligne['id'] ?></td>
                 <td><?php echo $ligne['libelle'] ?></td>
                 <td><?php echo $ligne['prix'] ?></td>
